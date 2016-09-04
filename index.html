@@ -5,66 +5,73 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Portfolio Site</title>
+
+		<!-- link to google font -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,400' rel='stylesheet' type='text/css'>
+
 		<!-- link to predefined bootstrap (tweeter) css stylesheet -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<div class="row img-responsive">
 				<div class="col-md-6">
-					<img src="http://placehold.it/100x100" alt="Udacity logo">
+					<img class="title-logo" src="img/U_logo.jpg" alt="Udacity logo">
 				</div>
-				<h1 class="text-right text-uppercase">Moniphal Say</h2>
-				<h3 class="text-right">Front-End Ninja</h3>
-				<div class="col-md-12"><hr></div>
+				<div class="col-md-6 text-right text-uppercase">
+					<h1 class="text-thin big-title">Moniphal Say</h2>
+					<h4>Front-End Beginner</h4>
+				</div>
 			</div>
+
+			<div class="row">
+				<div class="col-md-12"><hr class="line-thick"></div>
+			</div>
+
 			<div class="row img-responsive">
 				<div class="col-md-1">
-					<img src="http://placehold.it/1140x350" alt="Our sample logo">
+				<!--	<img class="center-img" src="http://placehold.it/1140x350" alt="Our sample logo"> -->
+				<!-- TODO -->
+				<img class="center-img" src="img/angkor-wat-1280w.jpg" 
+					sizes="(max-width: 400px) 100vw, (min-width: 401px) 50vw"
+					srcset="img/angkor-wat-1280w.jpg 1145w, img/angkor-wat-640w.jpg 640w"
+					alt="Angkor Wat Temple from pixabay">
 				</div>
 			</div>
+
 			<div class="row">
-				<div class="col-md-12 h2">Featured Work</div>
+				<div class="col-md-12">
+					<h2 class="text-muted">Featured Work</h2>
+				</div>
 			</div>	
-			<div class="row img-responsive">
-				<div class="col-md-6">
-					<img src="http://placehold.it/555x300" alt="project1">
-					<caption>Project1</caption>
+
+			<div class="row img-responsive text-center text-uppercase">
+				<div class="col-md-4 img-responsive">
+					<img src="http://placehold.it/350x200" alt="project1">
+					<caption><h2>Project1</h2></caption>
 				</div>
-				<div class="col-md-6">
-					<img src="http://placehold.it/555x300" alt="project2">
-					<caption>Project2</caption>
+				<div class="col-md-4">
+					<img src="http://placehold.it/350x200" alt="project2">
+					<caption><h2>Project2</h2></caption>
+				</div>
+				<div class="col-md-4">
+					<img src="http://placehold.it/350x200" alt="project3">
+					<caption><h2>Project3</h2></caption>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-6">
+
+			<div class="row text-center">
+				<div class="col-md-4">
 					<p><a href="http://github.com/saymoniphal/fswd-p1">Link to project1</a></p>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-4">
+					<p><a href="http://github.com/saymoniphal/fswd-p2">Link to project2</a></p>
+				</div>
+				<div class="col-md-4">
 					<p><a href="http://github.com/saymoniphal/fswd-p2">Link to project2</a></p>
 				</div>
 			</div>	
 		</div>
-
-	    <!-- Modal -->
-	    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	        <div class="modal-dialog">
-	            <div class="modal-content">
-	                <div class="modal-header">
-	                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
-	                </div>
-	                <div class="modal-body">
-	                    <img class="img-responsive" src="images/555.jpeg">
-	                    This was my first project in this class. I learned a lot about HTML and CSS.
-	                </div>
-	                <div class="modal-footer">
-	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-
 	</body>
 </html>
