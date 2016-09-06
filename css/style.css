@@ -4,8 +4,22 @@ body {
 	font-weight: 400;
 }
 
+header {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+footer {
+	background-color: #7d97ad;
+	text-align: center;
+}
+
+h3 {
+	text-transform: uppercase;
+}
+
 .text-thin {
-	font-weight: 200;
+	font-weight: 100;
 }
 
 .text-muted {
@@ -15,11 +29,6 @@ body {
 
 .big-title {
 	font-size: 60px;
-}
-
-.title-logo {
-	margin-top: 20px;
-	margin-bottom: 20px;
 }
 
 .line-thick {
