@@ -9,16 +9,20 @@
 		<!-- link to google font -->
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,400' rel='stylesheet' type='text/css'>
 
-		<!-- link to predefined bootstrap (tweeter) css stylesheet -->
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- link to predefined bootstrap (tweeter) css stylesheet
+			choose bootstrap minified file as it is more compact
+			(same content with smaller filesize)-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+		<!-- bootstrap required everything in a container -->
 		<div class="container">
 			<div class="row">
 				<header>
 				<div class="col-md-6">
-					<img class="img-responsive" src="img/U_logo.jpg" alt="Udacity logo">
+					<img class="img-responsive" src="img/U_logo.jpg"
+						alt="Udacity logo">
 				</div>
 				<div class="col-md-6 text-right text-uppercase">
 					<h1 class="text-thin big-title">Moniphal Say</h1>
@@ -32,10 +36,17 @@
 
 			<div class="row text-center">
 				<div class="col-md-12">
-				<img class="img-responsive" src="img/angkor-wat-temple-1000px.jpg"
+				<img class="img-responsive"
+					sizes="100vw"
 					srcset="img/angkor-wat-temple-1000px.jpg 1140w, 
-					img/angkor-wat-temple-640.jpg 640w"
+							img/angkor-wat-temple-640.jpg 640w"
+					src="img/angkor-wat-temple-640px.jpg"
 					alt="Angkor Wat Temple in Cambodia">
+					<!-- srcset and sizes tell the browser the list of available
+					images of different resolutions (w: width descriptor), so
+					browser can download the one that suits its screen width.
+					In case browser doesn't recognize srcset, it will use the
+					fallback image in 'src' -->
 				</div>
 			</div>
 
@@ -49,28 +60,40 @@
 				<div class="col-md-4">
 					<figure>
 						<img class="img-responsive" src="img/movie_trailer.jpg" alt="Movie Trailer">
-						<figcaption><h3>Movie Trailer</h3></figcaption>
-						<p><a href="https://github.com/saymoniphal/fswd-movie-trailer">
-						https://github.com/saymoniphal/fswd-movie-trailer</a></p>
+						<figcaption>
+							<h3>Movie Trailer</h3>
+							<a href="https://github.com/saymoniphal/fswd-movie-trailer">
+							https://github.com/saymoniphal/fswd-movie-trailer</a>
+						</figcaption>
 					</figure>
 				</div>
 				<div class="col-md-4">
 					<figure>
 						<img class="img-responsive" src="img/ubuntu-360px.jpg" alt="Ubuntu distribution">
-						<figcaption><h3>Ubuntu</h3></figcaption>
-						<p><a href="http://http://www.ubuntu.com/">http://www.ubuntu.com/</a></p>
+						<figcaption>
+							<h3>Ubuntu</h3>
+							<a href="http://http://www.ubuntu.com/">http://www.ubuntu.com/</a>
+						</figcaption>
 					</figure>
 				</div>
 				<div class="col-md-4">
 					<figure>
 						<img class="img-responsive" src="img/Git_session.png" alt="Git Version Control System">
-						<figcaption><h3>Git</h3></figcaption>
-						<p><a href="https://git-scm.com/">https://git-scm.com/</a></p>
+						<figcaption>
+							<h3>Git</h3>
+							<a href="https://git-scm.com/">https://git-scm.com/</a>
+						</figcaption>
 					</figure>
 				</div>
 			</div>
 
-			<footer>Full Stack Web Development Project</footer>
+			<footer>
+				Full Stack Web Development Project
+				<p><a href="http://css-validator.org/check/referer">
+					<img src="http://css-validator.org/images/vcss.png"
+						alt="Valid CSS!" /></a>
+				</p>
+			</footer>
 		</div>
 	</body>
 </html>
